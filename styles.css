@@ -1,0 +1,490 @@
+/* Importing Google Fonts 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap'); */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 8vh;
+    line-height: 1.6;
+    font-size: 1rem; /* Default font size (for rem-based scaling) */
+    background-color: #000000; /* Off White */
+    /* color: #010101;  Near Black */
+}
+
+
+
+/* Header Styling */
+.navbar {
+    background-color: #000000; /* Black for the navbar background */
+    padding: 1.5vh 2vw; /* Padding is relative to viewport */
+    background-image: url('images/background7.jpg');
+    background-size: cover; /* Ensure the background image covers the navbar */
+    background-position: top; /* Initial position */
+    animation: moveBackground 10s infinite alternate; /* Animation applied */
+}
+
+/* Define the keyframes for moving the background */
+@keyframes moveBackground {
+    10% {
+        background-position: top; /* Start at the top */
+    }
+    90% {
+        background-position: bottom; /* Move to the bottom */
+    }
+}
+
+.navbar-brand img.logo {
+    height: 6.6vh; /* Logo size relative to viewport height */
+}
+
+.nav-link {
+    color: #000000; /* Grayish Brown for navbar links */
+    font-size: 1.2rem; /* Font size scales with root font size */
+    margin-left: 2vw; /* Margins using viewport width */
+}
+
+
+.nav-link:hover {
+    color: #D1B355; /* Light Gold for hover state  */
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #F7F7F7; /* Off White for a softer dropdown menu background */
+    border: none;
+}
+
+.dropdown-item {
+    color: #000000; /* Grayish Brown for dropdown items */
+    font-size: 1rem; /* Scales relative to base font size */
+}
+
+.dropdown-item:hover {
+    background-color: #D1B355; /* Light Gold for hover background */
+    color: #000000; /* Black for hover text */
+}
+
+
+.navbar a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+    outline: none; /* Remove outline for focus state */
+}
+
+.navbar a:focus,
+.navbar a:active {
+    outline: none; /* Remove outline on focus and active states */
+    color: inherit; /* Prevent color change on active or focus */
+    text-decoration: none; /* Ensure no underline on focus or active states */
+}
+
+
+/* Make the header sticky */
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-brand {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        margin-bottom: 1rem;
+        font-size: 1.1rem; /* Slightly reduce the size on smaller screens */
+    }
+}
+
+
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 5vw;
+    background-image: url('images/background1.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+}
+
+.hero-content {
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #4A3C2B;
+}
+
+.hero p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #4A3C2B;
+}
+
+.price-button {
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem 2rem;
+    background-color: #E2C966;
+    color: #010101;
+    font-size: 1.5rem;
+    text-align: center;
+    display: inline-block;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    pointer-events: none;
+    margin-top: -1rem;
+    align-self: center;
+}
+
+.hero-image {
+    position: relative; /* Make this container the reference for absolutely positioned children */
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-left: 2vw; /* Existing left margin for spacing */
+}
+
+
+@media (min-width: 992px) { /* Adjust this breakpoint according to your design */
+    .hero-image img {
+        margin-left: 1vw; /* Reduce the left margin to shift the image a bit to the left */
+        transform: translateX(-25%); /* Additional shifting to the left */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-content, .hero-image {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+/* How To Use Section */
+
+.how-to-use {
+    padding: 5vh 5vw;
+    background-color: #F7F7F7; /* Off White for a clean, neutral background */
+    text-align: center;
+    background-image: url('images/background5.jpg');
+    
+}
+
+.how-to-use h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2vh;
+    font-family: 'Playfair Display', serif;
+    color: #010101; /* Near Black for high contrast and readability */
+}
+
+.how-to-use p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 3vh;
+    color: #727272; /* Light Gray for softer text appearance */
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    gap: 2vw;
+}
+
+.step {
+    width: 30%; /* Ensure each step takes up equal width */
+    text-align: center;
+}
+
+.step img {
+    width: 66%; /* Ensure images are responsive */
+    height: auto;
+    margin-bottom: 1.5vh;
+}
+
+.step p {
+    font-size: 1.125rem;
+    color: #58464A; /* Dusty Rose to provide a warm, subtle tone to text */
+}
+
+.storage p {
+    font-size: 1.25rem;
+    margin-top: 3vh;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000; /* Warm Beige to highlight storage instructions */
+}
+
+
+
+
+/* benefitsannd nutrition Section */
+
+.benefits-nutrition {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 5vw;
+    background-color: #EAE8DF; /* Pale Gray for a clean, subtle background */
+    flex-wrap: wrap;
+}
+
+.benefits-content, .nutrition-content {
+    font-family: 'Montserrat', sans-serif; /* Headings use Montserrat */
+    width: 48%; /* Equal width for both sides */
+    background-color: #F7F7F7; /* Off White for a bright and clean look */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow for better depth */
+}
+
+.benefits-content h2, .nutrition-content h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    color: #010101; /* Near Black for strong visibility */
+    text-align: left; /* Align left for a clean, modern look */
+    padding-left: 1rem; /* Ensure consistent padding */
+}
+
+.benefits-content ul, .nutrition-content ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.125rem;
+    padding-left: 1rem; /* Consistent padding for alignment */
+}
+
+.benefits-content ul li, .nutrition-content ul li {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    color: #58464A; /* Dusty Rose for a warm, inviting text color */
+}
+
+.benefits-content ul li img {
+    width: 50px; /* Adjust size of benefit icons */
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.benefits-content ul li {
+    font-size: 1.5rem; /* Increased font size for emphasis */
+    line-height: 1.75; /* Adjusted line height for better readability */
+}
+
+.nutrition-content ul li {
+    font-size: 1rem;
+    color: #727272; /* Light Gray for subtler text */
+}
+
+.nutrition-content ul li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+
+
+/* For Aligning Heading Left with Proper Margin */
+.benefits-content h2, .nutrition-content h2 {
+    text-align: left;
+    padding-left: 1rem; /* Adjust left margin of headings */
+}
+
+.benefits-content ul, .nutrition-content ul {
+    padding-left: 1rem; /* Ensuring the list items start with the same left margin */
+}
+
+
+
+
+/* Contact Us Section */
+/* Contact Us Section */
+.contact-us {
+    padding: 5vh 5vw;
+    background-color: #EAE8DF; /* Pale Gray for a soft, inviting background */
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Unified font family for consistency */
+    background-image: url('images/background4.jpg');
+}
+
+.contact-us h2 {
+    font-family: 'Montserrat', sans-serif; /* Headings use Montserrat */
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #010101; /* Near Black for strong visibility */
+}
+
+.contact-us p {
+    font-family: 'Roboto', sans-serif; /* Body text uses Roboto */
+    font-size: 1.25rem;
+    color: #727272; /* Light Gray for readable, softer text appearance */
+    margin-bottom: 4vh;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Ensures both sides have equal height */
+    gap: 2vw;
+    height: auto; /* Allow flexibility on height */
+}
+
+.contact-info {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f7f7f7; /* Off White for a clean, contemporary look */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12); /* Slightly adjusted shadow for better depth */
+    height: 100%; /* Ensure this element stretches to fill the available height */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center; /* Ensures icons and text are aligned vertically */
+    margin-bottom: 2rem;
+}
+
+.contact-item i {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: #E2C966; /* Muted Gold for the icons to stand out */
+    min-width: 40px; /* Ensures consistent space for the icon */
+    text-align: center; /* Centers the icon within its container */
+}
+
+.contact-item p {
+    font-size: 1.125rem;
+    color: #010101; /* Near Black for better readability */
+    text-align: left;
+    margin: 0; /* Remove margin for proper vertical alignment */
+}
+
+.contact-map {
+    width: 47%;
+    height: auto; /* Ensure the map section also stretches to fill the available height */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12); /* Consistent shadow style */
+    overflow: hidden;
+}
+
+
+
+
+
+footer {
+    padding: 2vh 5vw;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+footer nav ul li a {
+    font-family: 'Roboto', sans-serif; /* Footer links use Roboto */
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .price-button {
+        align-self: center;
+        margin-top: 0; /* Remove negative margin on smaller screens */
+    }
+
+    .steps {
+        flex-direction: column;
+        gap: 3vh;
+    }
+    .step {
+        width: 80%; /* Full width for each step on mobile */
+        margin: 0 auto;
+    }
+
+    .benefits-content, .nutrition-content {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .contact-info, .contact-map {
+        width: 95%;
+        height: auto;
+    }
+
+    
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .benefits-content, .nutrition-content {
+        width: 48%; /* Keep equal size on medium screens */
+    }
+}
+
+@media (min-width: 1025px) {
+    .benefits-content, .nutrition-content {
+        width: 48%; /* Equal size on large screens */
+    }
+}
