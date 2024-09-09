@@ -1,6 +1,3 @@
-/* Importing Google Fonts 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap'); */
-
 
 * {
     margin: 0;
@@ -36,7 +33,7 @@ body {
 
 .nav-link {
     color: #000000; /* Grayish Brown for navbar links */
-    font-size: 1.2rem; /* Font size scales with root font size */
+    font-size: 1.5rem; /* Font size scales with root font size */
     margin-left: 2vw; /* Margins using viewport width */
 }
 
@@ -266,7 +263,7 @@ body {
 }
 
 .step p {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     color: #58464A; /* Dusty Rose to provide a warm, subtle tone to text */
 }
 
@@ -300,7 +297,7 @@ body {
 }
 
 .benefits-content h2, .nutrition-content h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
     font-weight: bold;
     font-family: 'Playfair Display', serif;
@@ -317,7 +314,7 @@ body {
 }
 
 .benefits-content ul li, .nutrition-content ul li {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif; 
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
@@ -365,14 +362,14 @@ body {
     padding: 5vh 5vw;
     background-color: #EAE8DF; /* Pale Gray for a soft, inviting background */
     text-align: center;
-    font-family: 'Roboto', sans-serif; /* Unified font family for consistency */
     background-image: url('images/background4.jpg');
 }
 
 .contact-us h2 {
-    font-family: 'Playfair Display', serif; /* Headings use Montserrat */
+    font-family: 'Playfair Display', serif; 
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    font-weight: bold;
     color: #010101; /* Near Black for strong visibility */
 }
 
@@ -421,7 +418,7 @@ body {
 }
 
 .contact-item p {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     color: #000000; /* Near Black for better readability */
     text-align: left;
     margin: 0; /* Remove margin for proper vertical alignment */
