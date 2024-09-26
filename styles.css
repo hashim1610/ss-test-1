@@ -87,8 +87,8 @@ body {
 
 
 
-/* Our Goal Section */
-#our-goal {
+/* Home Section */
+#Home {
     background-image: url('images/background3.jpg');
     background-size: cover;
     background-position: center;
@@ -101,15 +101,15 @@ body {
     position: relative;
 }
 
-#our-goal .container h1{
+#Home .container h1{
     font-family: 'Playfair Display', serif;
 }
 
-#our-goal .container p{
+#Home .container p{
     font-family: 'Montserrat', sans-serif; 
 }
 
-#our-goal .container {
+#Home .container {
     background-color: rgba(255, 255, 255, 0.8); /* Light background for text readability */
     padding: 2rem;
     border-radius: 10px;
@@ -832,7 +832,7 @@ body {
         margin-bottom: 1rem;
     }
 
-    #our-goal, #our-journey {
+    #Home, #our-journey {
         padding: 3vh 1rem;
     }
 
@@ -845,7 +845,7 @@ body {
         line-height: 1.6;
     }
 
-    #our-goal .container, #our-journey .container {
+    #Home .container, #our-journey .container {
         padding: 1.5rem;
     }
 
